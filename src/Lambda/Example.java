@@ -11,7 +11,7 @@ interface StringExample{
 public class Example {
     public static void main(String[] args){
 
-        // lambda function starts here
+        // lambda function starts here - StringExample result = new StringExample()
         StringExample result = (str) -> {
             String c1= "";
             for (int i = str.length() - 1; i >= 0; i--){
@@ -21,6 +21,7 @@ public class Example {
             return c1;
         };
 
+        // Now use this Lambda Function
         System.out.println(result.reverse("Hello"));
     }
 }
