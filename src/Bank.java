@@ -1,4 +1,6 @@
 public class Bank {
+
+    // This is a class, not any method or attribute
     class Account{
         public void printAccountName(){
             System.out.println("Bank Account");
@@ -6,6 +8,7 @@ public class Bank {
     }
 
     public void callingMethod(){
+        // Creating instance of Account class
         Account a = new Account();
         a.printAccountName();
     }
@@ -14,7 +17,8 @@ public class Bank {
         int res = a*b;
         System.out.println("Result is = "+res);
     }
-
+    
+    // Static method
     public static void sumWithStatic(int a,int b){
         int res = a*b;
         System.out.println("Result is = "+res);
@@ -24,6 +28,7 @@ public class Bank {
     public static void main(String[] args){
         Student std = new Student("SSH", 25, 30);
         Bank b = new Bank();
+        // Bank class -> Account Class : Bank.Account
         Bank.Account a = b.new Account();
         a.printAccountName();
         b.callingMethod();
