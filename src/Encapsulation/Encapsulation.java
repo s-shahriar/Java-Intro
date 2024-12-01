@@ -1,4 +1,5 @@
 package Encapsulation;
+
 class Human {
     private int age;
     private String name;
@@ -21,7 +22,7 @@ class Human {
 }
 
 public class Encapsulation {
-    public static void main(String a[]){
+    public static void main(String[] args){
         Human obj = new Human();
         obj.setAge(15);
         obj.setName("Jack");
