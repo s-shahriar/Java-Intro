@@ -1,6 +1,7 @@
 package CollectionFramework;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 
 public class JavaArrayList {
@@ -49,7 +50,7 @@ public class JavaArrayList {
 
         // Reversing the ArrayList
         System.out.println("\nReversing the ArrayList...");
-        Collections.sort(cars, Collections.reverseOrder());
+        cars.sort(Collections.reverseOrder());
         System.out.println("List after reversing: " + cars);
     }
 }
